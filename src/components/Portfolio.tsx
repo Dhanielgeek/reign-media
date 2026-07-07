@@ -22,12 +22,13 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: (i % 3) * 0.1 }}
-              className="group relative overflow-hidden aspect-[4/5] cursor-pointer"
+              className="group relative overflow-hidden aspect-4/5 cursor-pointer"
             >
+              <img src={item.image} alt={item.title} />
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${item.tone} opacity-80 transition-transform duration-700 group-hover:scale-110`}
+                className={`absolute inset-0 bg-linear-to-br ${item.tone} opacity-80 transition-transform duration-700 group-hover:scale-110`}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-void/90 via-void/20 to-void/10" />
+              <div className="absolute inset-0 bg-linear-to-t from-void/90 via-void/20 to-void/10" />
               <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/60 transition-colors duration-500 m-3" />
 
               <div className="relative h-full flex flex-col justify-end p-6">

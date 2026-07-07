@@ -1,5 +1,6 @@
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import Crest from "./Crest";
+// import Crest from "./Crest";
+import logo from '../../public/20260203_232516.png'
 
 export default function Footer() {
   return (
@@ -7,7 +8,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 pb-12">
           <div className="flex items-center gap-4">
-            <Crest className="w-14 h-14" />
+            {/* <Crest className="w-14 h-14" /> */}
+            <img src={logo} alt="Reign Media Logo" className="w-10 h-10" />
             <div>
               <p className="font-display italic text-xl text-ivory">
                 Reign Media Concept
