@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import Crest from "./Crest";
+// import Crest from "./Crest";
+import logo from '../../public/20260203_232516.png'
 
 const wordTop = "REIGN".split("");
 const wordBottom = "MEDIA CONCEPT".split("");
@@ -21,8 +22,8 @@ export default function Hero() {
       />
 
       {/* ambient glow */}
-      <div className="pointer-events-none absolute -top-40 right-[-10%] w-[560px] h-[560px] rounded-full bg-gold/10 blur-[140px]" />
-      <div className="pointer-events-none absolute bottom-[-20%] left-[-10%] w-[420px] h-[420px] rounded-full bg-gold-deep/10 blur-[120px]" />
+      <div className="pointer-events-none absolute -top-40 right-[-10%] w-140 h-140 rounded-full bg-gold/10 blur-[140px]" />
+      <div className="pointer-events-none absolute bottom-[-20%] left-[-10%] w-105 h-105 rounded-full bg-gold-deep/10 blur-[120px]" />
 
       <div className="relative max-w-7xl w-full mx-auto px-6 md:px-10 flex flex-col gap-10">
         <motion.div
@@ -102,7 +103,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1 }}
         className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2"
       >
-        <Crest className="w-32 h-32" spin />
+        <img src={logo} className="w-32 h-32"  />
       </motion.div>
     </section>
   );

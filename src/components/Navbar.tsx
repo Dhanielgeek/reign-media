@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../data/content";
+import logo from '../../public/20260203_232516.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
         <a href="#home" className="flex items-center gap-3 group">
           <span className="font-display italic text-2xl text-gold group-hover:text-gold-light transition-colors">
-            R
+            <img src={logo} alt="Reign Media Logo" className="w-10 h-10" />
           </span>
           <span className="font-mono text-[0.65rem] tracking-widest-lg uppercase text-ivory-dim">
             Reign Media Concept
