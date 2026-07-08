@@ -1,7 +1,6 @@
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 // import Crest from "./Crest";
-import logo from '../../public/20260203_232516.png'
-
+import logo from '../assets/20260203_232516.png'
 export default function Footer() {
   return (
     <footer className="relative bg-void border-t border-gold-deep/30 pt-16 pb-8">
