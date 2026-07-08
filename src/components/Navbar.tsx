@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../data/content";
-import logo from '../../public/20260203_232516.png'
+import logo from '../assets/20260203_232516.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 // import Crest from "./Crest";
-import logo from '../../public/20260203_232516.png'
+import logo from '../assets/20260203_232516.png'
 
 const wordTop = "REIGN".split("");
 const wordBottom = "MEDIA CONCEPT".split("");
