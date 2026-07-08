@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { portfolioItems } from "../data/content";
-import test from '../assets/IMG_0755.jpeg'
+
 
 export default function Portfolio() {
   return (
@@ -38,7 +38,7 @@ export default function Portfolio() {
                 className="group relative overflow-hidden aspect-4/5 cursor-pointer block"
               >
                 <img
-                  src={test}
+                  src={item.image}
                   alt={item.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
